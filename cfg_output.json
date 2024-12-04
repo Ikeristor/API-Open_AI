@@ -1,0 +1,4 @@
+{
+    "prompt": "Create a simple Context-Free Grammar (CFG) for a language that generates arithmetic expressions involving addition and multiplication. The grammar should include rules for numbers and operators, and adhere to standard precedence.",
+    "generated_cfg": "\n        <expr> \u2192 <expr> + <term>\n        <expr> \u2192 <term>\n        <term> \u2192 <term> * <factor>\n        <term> \u2192 <factor>\n        <factor> \u2192 ( <expr> )\n        <factor> \u2192 <digit>\n\n        "
+}
